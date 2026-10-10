@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, .font-serif-title {
+    font-family: var(--font-serif);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.paper-texture {
+  background-color: #FAF8F5;
+  background-image: radial-gradient(#E7E2D9 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+.drop-cap::first-letter {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  line-height: 0.85;
+  float: left;
+  margin-top: 0.15rem;
+  margin-right: 0.65rem;
+  color: #1C1917;
+}
+
+@keyframes floatLantern {
+  0% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.85;
+  }
+  50% {
+    transform: translateY(-12px) translateX(6px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.85;
+  }
+}
+
+.animate-float-slow {
+  animation: floatLantern 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatLantern 7.5s ease-in-out 2s infinite;
+}

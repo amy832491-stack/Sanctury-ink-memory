@@ -1,0 +1,6 @@
+{
+  "name": "Sanctuary — Writer's Paradise & The Memory Corner",
+  "description": "An enchanting, free sanctuary for writers and bloggers with encrypted secure links, granular privacy controls, and a heartfelt Memory Corner for departed loved ones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
